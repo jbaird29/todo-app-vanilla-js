@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>To-do List App</h1>
+  <h2 id="remaining-todos"></h2>
+
+  <form id="add-todo">
+    <input id="add-todo-input" type="text" placeholder="Enter new to-do" name="todoText" autocomplete="off">
+    <button id="add-todo-btn">Add to-do</button>
+  </form>
+
+  <br>
+  <input id="filter-todo" type="text" placeholder="Search the list">
+
+  <br>
+  <br>
+  <label for="hide-completed">
+    <input id="hide-completed" type="checkbox"> Hide Completed To-do's
+  </label>
+
+  <br>
+  <br>
+  <button id="delete-completed">x</button><label for="delete-completed"> Delete Completed To-do's</label>
+
+  <br>
+  <br>
+  <label for="filter-options">Filter By</label>
+  <select id="filter-options">
+    <option value="byAlphabetical">Alphabetical</option>
+    <option value="byCreatedDate">Created Date</option>
+    <option value="byModifiedDate">Modified Date</option>
+  </select>
+
+  <br>
+  <br>
+  <div id="todo-list">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+  <script src="todo-functions.js"></script>
+  <script src="todo-app.js"></script>
+</body>
+</html>
